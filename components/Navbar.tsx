@@ -10,7 +10,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
-  const isLogin = true;
+  const isLogin = false;
 
   return (
     <div className="shadow-sm p-2 bg-gray-100 z-50 sticky top-0 ">
@@ -70,9 +70,9 @@ const NavItems = () => {
         <NavigationMenuItem>
           <Link
             className="inline-flex h-9 items-center px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground focus:outline-none"
-            href="/user-dashboard"
+            href="/profile"
           >
-            Dashboard
+            Profile/Dashboard
           </Link>
         </NavigationMenuItem>
 
@@ -115,10 +115,10 @@ const MobileNav = () => {
             {isLogin ? (
               <SheetTrigger asChild className="flex items-start justify-start">
                 <Link
-                  href="/user-dashboard"
+                  href="/profile"
                   className="text-sm hover:underline"
                 >
-                  Dashboard
+                  Profile/Dashboard
                 </Link>
               </SheetTrigger>
             ) : null}
