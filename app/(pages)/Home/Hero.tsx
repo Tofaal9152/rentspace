@@ -8,7 +8,7 @@ export default () => {
       <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
 
       {/* Container for the background image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 ">
         <BackgroundImage />
       </div>
 
@@ -20,6 +20,8 @@ export default () => {
         {/* Search */}
         <Search />
       </div>
+
+      
     </div>
   );
 };

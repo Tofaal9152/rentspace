@@ -3,7 +3,7 @@ import Hero from "./(pages)/Home/Hero";
 
 export default () => {
   return (
-    <div className="">
+    <div >
       <Hero />
       <Features />
     </div>
