@@ -84,8 +84,8 @@ export function EditSpaceDetails() {
                 required
               />
             </div>
-            <div className="col-span-full">
-              <Button type="submit" className="w-full">
+            <div className="col-span-full ">
+              <Button type="submit" className="w-full bg-[#008966]">
                 Save Changes
               </Button>
             </div>

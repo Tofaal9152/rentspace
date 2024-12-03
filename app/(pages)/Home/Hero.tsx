@@ -13,7 +13,7 @@ export default () => {
       </div>
 
       {/* Overlay text */}
-      <div className="absolute top-2/4 z-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center px-4">
+      <div className="absolute w-full px-8 top-2/4 z-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center md:px-4">
         <h1 className="text-4xl font-semibold md:text-5xl lg:text-6xl">
           Find the right apartment for you.
         </h1>

@@ -57,7 +57,7 @@ const AddNewSpace = () => {
   return (
     <Dialog>
       <DialogTrigger>
-        <div className="mb-4 bg-primary text-primary-foreground shadow hover:bg-primary/90 flex items-center px-2 py-2 rounded-md">
+        <div className="mb-4 bg-[#008966] text-primary-foreground shadow hover:bg-primary/90 flex items-center px-2 py-2 rounded-md">
           <PlusIcon size={20} className="mr-2" />
           Add New Space
         </div>
@@ -128,7 +128,7 @@ const AddNewSpace = () => {
             />
          
           </div>
-          <Button type="submit">Add Space</Button>
+          <Button className="bg-[#008966]" type="submit">Add Space</Button>
         </form>
       </DialogContent>
     </Dialog>

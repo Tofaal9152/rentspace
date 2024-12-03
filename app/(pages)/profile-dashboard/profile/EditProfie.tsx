@@ -20,6 +20,7 @@ export default () => {
     name: "Night Fury",
     location: "Dhaka, Bangladesh",
     contact: "+880123456789",
+    address: "123 Main St, Dhaka, Bangladesh",
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -31,7 +32,7 @@ export default () => {
     <Dialog>
       <DialogTrigger asChild>
         <Button variant="outline" className="mt-4">
-            <BiSolidEditAlt className="mr-2" />
+          <BiSolidEditAlt className="mr-2" />
           Edit
         </Button>
       </DialogTrigger>
@@ -54,7 +55,7 @@ export default () => {
               className="col-span-3"
             />
           </div>
-          
+
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="location" className="text-right">
               Location
@@ -77,9 +78,21 @@ export default () => {
               className="col-span-3"
             />
           </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="address" className="text-right">
+              Address
+            </Label>
+            <Input
+              id="address"
+              value={profile.address}
+              onChange={handleInputChange}
+              className="col-span-3"
+            />
+          </div>
         </div>
         <DialogFooter>
           <Button
+            className="bg-[#008966]"
             onClick={() => console.log("Profile updated:", profile)}
             type="submit"
           >
